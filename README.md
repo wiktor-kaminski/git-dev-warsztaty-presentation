@@ -1,18 +1,21 @@
+## Konfiguracja narzędzi do zainstalowania przed warsztatami wysłana przez Pawła 2 dni wcześnie (przez meetup)
+Krzysiek ma napisać blog posta o tym.
+
 ## Wydrukować ludziom wszystkie komendy 
 
 Wydrukować ludziom wszystkie komendy które bedziemu używali, z wszystkimi flagami, włącznie z git config editor (i pokazane jak ustawić w linuksie gedit, na macu nie wiem co i na windowsie notepada). I tak samo na wszystkich trzech systemach ustawienie kdiff3
 * windows wiemy jak zrobić. Sprawdzić jak na Mac/Unix.
 * jeśli będziemy używali np 'touch' to też go tutaj dorzucić.
 
-## CZYM JEST git
+## CZYM JEST git - TOMEK
 - Git to rozproszona baza danych, oparta na streamie snapshotow plikow, reprezentowanych za pomocą hashy SHA-1. Dokładnie tak samo jak transakcję w bitcoinie.
 OBRAZEK z kolejka SHA i chmurkami co każdy SHA symbolizuje 
 
-## Jak działa git
+## Jak działa git - TOMEK
 Git w podstawowym scenariuszu tylko dodaje dane
 OBRAZEK  poprzedni dalej jesteśmy na tym samym slajdzie, ale dodaje dopisek że nawet commit revertujacy to dodanie danych
 
-## Wytłumaczyć working, staging, commited
+## Wytłumaczyć working, staging, commited - TOMEK
 
 Twoj projekt (Twoje pliki - absolutnie każdy plik który stworzysz/zedytujesz/usuniesz) zawsze jest w którymś z 3 "obszarow":
 Obszarze roboczym (working directory)
@@ -23,13 +26,13 @@ Staging area - bycia oznaczonym (staged) do dodania do bazy danych (zacommitowan
 
 Synchronizowanie baz danych między soba, pokazanie że wskazujesz jakiegoś remota i w raczej niespotykanym scenariuszu możesz wkazac nawet komputer kolegi obok - żadna roznica.
 
-## Przykładowe flow na slajdzie
+## Przykładowe flow na slajdzie - KRZYSIEK
 
 * W SourceTree pokazać jak poszczególne chunki się dodaje.
 
 Uwaga do zapamietania, że "-" przy pojedynczej fladze, a "--" przy całym słowie, gdzieś w trakcie, może później.
 
-### Example flow
+### Example flow - KRZYSIEK
 
 git init
   git init -> obok widać że powstał katalog gita
@@ -51,13 +54,13 @@ Nie pokazywać obrazków git-flow ani github-flow. Wytłumaczymy że prosta hist
 ### Cwiczenia powyższego
 
 // to są zmiany lokalne
-## Edytowanie istniejących zmian
+## Edytowanie istniejących zmian - TOMEK
 
 revertowanie oraz reset i commit --amend/ czy coś takiego
 - https://github.com/SkillsTemple/git-devWarsztaty-reset-revert
 
 
-## rebase --interactive
+## rebase --interactive - KRZYSIEK
 
 * dużo wprowadzenia, jak edytować (bo otworzy się plik w notatniku), kilka opcji, zamykamy plik
 * pokazać że można to zrobić 'rebase --interactive'
@@ -69,7 +72,7 @@ cd exercise-2
 git rebase --interactive
 ```
 
-## Branche
+## Branche - KRZYSIEK
 - Pobawic sie w https://learngitbranching.js.org/?NODEMO
 - Zadamy im proste cwiczenie w toolu (nasz scenariusz albo moze jakis z toola)
 - Ten sam scenariusz pokazemy wtedy na kodzie
@@ -78,9 +81,9 @@ git rebase --interactive
 
 Zwrocic uwage, ze ludzie czasem nie rozumieja jak mozna odwrocic kolejnosc commitow (cherry-pick / rebase, obawy ze mozna miec commit z edycja plikow ktory powstal w innym commicie. Zwrocic uwage, ze tutaj mamy proste sytuacje w ktorych pliki sa, a do trudniejszych sytuacji dojdziemy pozniej - w skrocie - powstana konflikty i git zapyta co zrobic bo nie wie jak to rozwiazac).
 
-## pushowanie i pullowanie zmian
+## pushowanie i pullowanie zmian - TOMEK
 
-### pull z rebase
+### pull z rebase - TOMEK
 
 ```sh
 $ git pull --rebase
@@ -96,7 +99,7 @@ zasymulować, że:
   * //wytłumaczyliśmy sobie dlaczego to nie będzie ćwiczenie, może ktoś coś wymyśli
 
 
-## merge i rebase
+## merge i rebase - KRZYSIEK
 
 * pracujemy nad featurem, na branch feature_light
 * mamy kilka commitów // 'git log' z consoli, ?SourceTree?
