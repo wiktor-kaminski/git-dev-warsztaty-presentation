@@ -108,6 +108,8 @@ zasymulować, że:
 * robimy merge
 * push
  
+ ## forki i pull requests - KRZYSIEK
+ Często ludzie myślą, że pull requesty i forki o których słyszeli to mechanizm gita, myślę że fajnie byłoby wytłumaczyć że to nie kwestia gita, tylko dzięki branchom gita łatwo było to uzyskać i w skrócie, w teorii jak to działa bez pokazywania w praktyce.
 
 https://github.com/SkillsTemple/git-devWarsztaty-rebase
 - robienie rebase między branchami jest trudne i chyba mało kto to zrozumiał. ??? Może za trudne/ może tylko pokazać.
