@@ -68,23 +68,62 @@
 					</small>
 				</section>
 				<section>
-					<h2>GIT TO BAZA DANYCH</h2>
-					Git to rozproszona baza danych, oparta na streamie snapshotów plikow, identyfikowanych poprzez hashe SHA-1
+					<h3>Git w zasadzie to baza danych</h3>
+					Git to VCS na który można patrzeć, jak na rozproszoną bazę danych, opartą na streamie snapshotów plikow
 					<p>
-						<img src="img/sha-commits.jpg" />
-						<small>
-							<i>Pliki w różnym stadium rozwoju, w kolejnych snapshotach</i>
-						</small>
+						<img src="img/distributed.png" />
 					</p>
 				</section>
 				<section>
-					Dokładnie analogicznie do tranzakcji w kryptowalutach
+					Git
+					<b>nie jest</b> scentralizowanym systemem kontroli wersji
+					<p>
+						<img src="img/centralized_vcs_illustration.png" />
+					</p>
+				</section>
+				<section>
+					Git jest
+					<b>zdecentralizowanym</b> systemem kontroli wersji
+					<p>
+						<img src="img/distributed_vcs_illustration.png" />
+					</p>
 				</section>
 			</section>
 
 			<section>
-				<h2>Jak działa git</h2>
-				TODO - TOMEK
+				<section>
+					<h2>Jak działa git</h2>
+					Git w podstawowym scenariuszu jedynie dodaje kolejne snapshoty plików
+					<p>
+						<img src="img/sha-commits.jpg" />
+					</p>
+					<p class="fragment">Dokładnie analogicznie dodawane są przelewy w bitcoin</p>
+				</section>
+				<section>
+					W svn commit to diff zmienionych plików (różnica)
+					<p>
+						<img src="img/deltas.png">
+					</p>
+				</section>
+				<section>
+					W git commit to snapshot <b>wszystkich </b> plików
+					<p>
+						<img src="img/snapshots.png">
+					</p>
+					reprezentowany za pomocą hasha SHA-1
+				</section>
+				<section>
+					<h3>W przeciwieństwie do kryptowalut...</h3>
+					<p class="fragment">
+						w swojej 'instacji bazy' (na swoim komputerze) możesz zmieniać istniejące snapshoty (commity)
+					</p>
+					<p class="fragment">
+						<b>ALE!</b>
+					</p>
+					<p class="fragment">
+						tylko pod warunkiem, że jeszcze ich nie opublikowałeś innym bazom
+					</p>
+				</section>
 			</section>
 
 			<section>
@@ -126,7 +165,9 @@
 
 			<section>
 				<section>
-					<h2>Pushowanie<br>&<br>pullowanie zmian</h2>
+					<h2>Pushowanie
+						<br>&
+						<br>pullowanie zmian</h2>
 					ToDo - Tomek
 				</section>
 				<section>
