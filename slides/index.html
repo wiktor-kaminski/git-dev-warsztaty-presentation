@@ -99,19 +99,20 @@
 					<h2>Dlaczego GIT jest git</h2>
 					<p>
 						<ul>
-							<li>jest szybki</li>
-							<li>jest rozproszony</li>
-							<li>ułatwia rozwiązywanie konfliktów</li>
-							<li>wspiera nieliniowy development (gałęzie)</li>
-							<li>działa offline</li>
-							<li>pozwala na pracę nad jakością commitów</li>
+							<li class="fragment">jest szybki</li>
+							<li class="fragment">jest rozproszony</li>
+							<li class="fragment">ułatwia rozwiązywanie konfliktów</li>
+							<li class="fragment">wspiera nieliniowy development (branche)</li>
+							<li class="fragment">działa offline</li>
+							<li class="fragment">pozwala na pracę nad jakością commitów</li>
+							<li class="fragment">bardzo łatwy do użytku domowego</li>
 						</ul>
 					</p>
 				</section>
 				<section>
 					<h2>Dodatkowo jest wiarygodny</h2>
 					<p>
-						Hash SHA-1 opiera się na
+						Suma kontrolna każdego commita opiera się na
 						<ul>
 							<li>Zawartości i nazwach wszystkich plików</li>
 							<li>ID parent commit(ów)</li>
@@ -122,6 +123,9 @@
 					Git się zorientuje przy nieprawidłowości w danych
 					<br>
 					<small>(np. po uszkodzeniu dysku albo próbie sabotażu)</small>
+					<p class="fragment">
+						Analogicznie wiarygodne są przelewy w bitcoin
+					</p>
 				</section>
 			</section>
 
@@ -131,11 +135,6 @@
 					Git w podstawowym scenariuszu jedynie dodaje kolejne snapshoty plików
 					<p>
 						<img src="img/sha-commits.jpg" />
-					</p>
-					<p class="fragment">
-						<small>
-							Dokładnie analogicznie dodawane są przelewy w bitcoin
-						</small>
 					</p>
 				</section>
 				<section>
@@ -153,6 +152,13 @@
 					reprezentowany za pomocą hasha SHA-1
 				</section>
 				<section>
+					Dzięki temu, można wskazać dowolny commit i podejrzeć cały stan systemu z ówczas, a nie tylko jakie diffy ten commit ze sobą niósł.
+					<p>
+						<img src="img/sha-commits.jpg" />
+					</p>
+					<small class="fragment">Wiedząc jaka jest wersja na produkcji, zawsze można wrócić do niej w kodzie i zrobić drobną poprawkę bez wprowadzania na produkcję kolejnych commitów.</small>
+				</section>
+				<section>
 					<h3>W przeciwieństwie do kryptowalut...</h3>
 					<p class="fragment">
 						w swojej 'instacji bazy' (na swoim komputerze) możesz zmieniać istniejące snapshoty (commity)
@@ -166,16 +172,21 @@
 				</section>
 				<section>
 					<h2>Git nie śledzi plików</h2>
-					<p>W przeciwieństwie do niektórych VCS,<br>git nie śledzi plików, wyłącznie ich zawartość</p>
+					<p>W przeciwieństwie do niektórych VCS,
+						<br>git nie śledzi plików, wyłącznie ich zawartość</p>
 					<img src="img/git-doesnt-track.png">
+				</section>
+				<section>
+					Pytania?
 				</section>
 			</section>
 
 			<section>
 				<section>
-					<h2>Working directory,</br>staging, commit</h2>
+					<h2>Working directory,</br>staging area, commit</h2>
 					<p>
-						Twoje pliki - absolutnie każdy plik który stworzysz/zedytujesz/usuniesz, zawsze jest w którymś z 3 "obszarow" gita
+						Twoje pliki - absolutnie każdy plik który utworzysz/edytujesz/usuniesz,
+						<br>zawsze jest w którymś z 3 "obszarów" gita
 					</p>
 					<ul>
 						<li>obszarze roboczym (working directory)</li>
@@ -184,20 +195,60 @@
 					</ul>
 				</section>
 				<section>
-					<h3>Obszar roboczy</h3>
+					<h2>Obszar roboczy</h2>
+					<p>
+						Obszar roboczy (working directory) to obszar w którym jest praca którą wykonałeś, ale o której jeszcze nie powiedziałeś nic
+						gitowi
+					</p>
+					<ul>
+						<li class="fragment">nowe pliki których wcześniej nie commitowałeś</li>
+						<li class="fragment">zmiany w plikach które wcześniej commitowałeś</li>
+						<li class="fragment">zmiana nazwy pliku lub jego usunięcie</li>
+					</ul>
+					<p class="fragment">
+						<b>Git nie wie nic o Twojej pracy w working directory, uważaj żeby jej nie stracić dopóki mu o niej nie powiesz</b>
+					</p>
+					<p class="fragment">
+						<small>
+							Zmiany w working directory odnoszą się do staging area, a jeśli danego pliku nie ma w staging area, wówczas bezpośrednio
+							do obecnej wersji w lokalnym repozytorium
+						</small>
+					</p>
 				</section>
 				<section>
 					<h3>Indeks (staged files)</h3>
-					Staging area - bycia oznaczonym (staged) do dodania do bazy danych (zacommitowania)
+					Staging area to obszar w którym przygotowujesz sobie które zmiany zostaną zaccomitowane, czyli doddane do Twojego lokalnego
+					repozytorium
+					<p class="fragment">
+						Po zastagowaniu zmiany, czyli przygotowaniu jej do commita, dalej można plik edytować, wówczas zmiany w working directory
+						pokazywane są względem zastagowanej wersji
+					</p>
+					<p class="fragment">
+						Co więcej, od razu można wybrać żeby zastagować tylko część zmian
+						<small>Dla przykładu na dole pliku zaczęliśmy dopisywać nowy kod, a w środku pliku zobaczyliśmy literówkę w tekście. Wówczas
+							można od razu nieprzerywając pracy na dole pliku, zastagować jedynie poprawienie literówki i dodać commita "Fix typo
+							in module A".</small>
+					</p>
 				</section>
 				<section>
-					<h3>Comimt (dodany do historii)</h3>
-					.git directory (repozytorium) - dodanym do bazy danych (commited) - czyli zabezpieczonym, który można odnaleźć znając SHA
-					snapschota bazy danych.
+					<h3>Comimt</h3>
+					Snapshot wszystkich plików w projekcie, posiadający identyfikator SHA-1
+					<p>
+						<img src="img/commit-example.png" />
+					</p>
 				</section>
 				<section>
 					<h3>Flow</h3>
 					<img src="img/git_working.png" />
+				</section>
+				<section>
+					<h3>Przykład stagowania (git add)</h3>
+					<a href="img/git-work-example.png">git-work-example.png
+						<img src="img/git-work-example-miniature.png" />
+					</a>
+				</section>
+				<section>
+					Pytania?
 				</section>
 			</section>
 
