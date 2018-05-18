@@ -123,3 +123,5 @@ Czasowo: 9-17 z czego odpada:
 * a pod koniec część ludzi wychodzi bo musi, są zmęczeni, atmosfera się rozluźnia.
 * 
 ?
+
+Przed prezentacją usunąć wszystkie aliasy z własne .gitconfig
