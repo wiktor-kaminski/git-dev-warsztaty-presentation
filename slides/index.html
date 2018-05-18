@@ -152,11 +152,13 @@
 					reprezentowany za pomocą hasha SHA-1
 				</section>
 				<section>
-					Dzięki temu, można wskazać dowolny commit i podejrzeć cały stan systemu z ówczas, a nie tylko jakie diffy ten commit ze sobą niósł.
+					Dzięki temu, można wskazać dowolny commit i podejrzeć cały stan systemu z ówczas, a nie tylko jakie diffy ten commit ze sobą
+					niósł.
 					<p>
 						<img src="img/sha-commits.jpg" />
 					</p>
-					<small class="fragment">Wiedząc jaka jest wersja na produkcji, zawsze można wrócić do niej w kodzie i zrobić drobną poprawkę bez wprowadzania na produkcję kolejnych commitów.</small>
+					<small class="fragment">Wiedząc jaka jest wersja na produkcji, zawsze można wrócić do niej w kodzie i zrobić drobną poprawkę bez wprowadzania
+						na produkcję kolejnych commitów.</small>
 				</section>
 				<section>
 					<h3>W przeciwieństwie do kryptowalut...</h3>
@@ -248,6 +250,19 @@
 					</a>
 				</section>
 				<section>
+					<h3>Head</h3>
+					HEAD to referencja do obecnie zcheckoutowanego commita, zazwyczaj będącego ostatnim commitem w branchu
+					<p>
+						<ul>
+							<li>HEAD - ostatni commit <i>(pierwszy od końca)</i></li>
+							<li>HEAD~1 - przedostatni commit</li>
+							<li>HEAD^ - przedostatni commit</li>
+							<li>HEAD~3 - czwarty od końca commit</li>
+							<li>HEAD^^^ - czwarty od końca commit</li>
+						</ul>
+					</p>
+				</section>
+				<section>
 					Pytania?
 				</section>
 			</section>
@@ -272,20 +287,71 @@
 			<section>
 				<section>
 					<h2>Edytowanie istniejących zmian</h2>
-					ToDo - Tomek
+					<ul>
+						<li class="fragment">Przed opublikowaniem innym</li>
+						<li class="fragment">Po opublikowaniu innym</li>
+					</ul>
 				</section>
 				<section>
-					Ćwiczenia
+					<h3>Edycja 'ostatnich' commitów przed opublikowaniem</h3>
+					<ul>
+						<li class="fragment">git reset
+							<ul>
+								<li class="fragment">
+									git reset --mixed
+								</li>
+								<li class="fragment">
+									git reset --soft
+								</li>
+								<li class="fragment">
+									git reset --hard
+								</li>
+							</ul>
+						</li>
+						<li class="fragment">commit --amend</li>
+						<li class="fragment">rebase --interactive</li>
+					</ul>
 				</section>
-			</section>
-
-			<section>
 				<section>
-					<h2>Rebase --interactive</h2>
-					ToDo - Krzysiek
+					<h3>Edycja 'ostatnich' commitów po opublikowaniu</h3>
+					<b>git revert</b><br>np:
+					<p>
+							<ul>
+								<li>git revert HEAD</li>
+								<li>git revert HEAD~4</li>
+								<li>git revert 6e5av3a</li>
+							</ul>
+					</p>
 				</section>
 				<section>
-					Ćwiczenia
+					<h3>Demo rebase --interactive</h3>
+				</section>
+				<section>
+					<p>
+						Ćwiczenie 1 (opis w repo)
+						<ol>
+							<li>
+								git clone https://github.com/SkillsTemple/git-devWarsztaty-reset-revert exercise-2
+							</li>
+							<li>
+								cd exercise-2
+							</li>
+							<li>
+								git rebase --interactive
+							</li>
+						</ol>
+					</p>
+					<p>
+						Ćwiczenie 2 - 'zabawa' z resetowaniem commitów i obserwacja 'co się dzieje'
+						<ol>
+							<li>
+								Ponowne zclonowanie w osobne miejsce (można wybrać dowolne inne repo)
+							</li>
+							<li>
+								git reset --soft/mixed/hard HEAD~LICZBA_COMMITÓW
+							</li>
+						</ol>
+					</p>
 				</section>
 			</section>
 
@@ -313,7 +379,7 @@
 
 			<section>
 				<section>
-					<h2>Merge i rebase</h2>
+					<h2>Merge vs rebase</h2>
 					ToDo - Krzysiek
 				</section>
 				<section>
