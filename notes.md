@@ -73,13 +73,15 @@ git rebase --interactive
 ```
 
 ## Branche - KRZYSIEK
-- Pobawic sie w https://learngitbranching.js.org/?NODEMO
-- Zadamy im proste cwiczenie w toolu (nasz scenariusz albo moze jakis z toola)
-- Ten sam scenariusz pokazemy wtedy na kodzie
-- Damy im cwiczenie rownie proste (moze takie same) na kodzie
 
+### Pobawic sie w https://learngitbranching.js.org/?NODEMO
 
+Cases:
 
+* 2 commity do przodu na masterze
+* branch 'work' i do przodu 2 commity, ktoś do nas przyszedł i chcemy mu pokazać stabilny master
+* branch 'bug' 2 commity wczesniej, poprawiamy nowym commitem
+* rebase na master'a
 
 Zwrocic uwage, ze ludzie czasem nie rozumieja jak mozna odwrocic kolejnosc commitow (cherry-pick / rebase, obawy ze mozna miec commit z edycja plikow ktory powstal w innym commicie. Zwrocic uwage, ze tutaj mamy proste sytuacje w ktorych pliki sa, a do trudniejszych sytuacji dojdziemy pozniej - w skrocie - powstana konflikty i git zapyta co zrobic bo nie wie jak to rozwiazac).
 
