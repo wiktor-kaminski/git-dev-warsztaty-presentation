@@ -2,7 +2,6 @@
   * [Atlassian Tutorials](https://www.atlassian.com/git/tutorials/)
   * [Learn git branching](http://pcottle.github.io/learnGitBranching/)
   * [Visualise git with D3](https://onlywei.github.io/explain-git-with-d3/)
-  * [Successful git branching model - Git flow](http://nvie.com/posts/a-successful-git-branching-model/)
   * [Oh shit, git!](http://ohshitgit.com/)
   * [Git cheatsheet](http://files.zeroturnaround.com/pdf/zt_git_cheat_sheet.pdf)
   * [How to undo (almost) anything with git](https://blog.github.com/2015-06-08-how-to-undo-almost-anything-with-git/)
