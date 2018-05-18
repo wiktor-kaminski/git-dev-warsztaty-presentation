@@ -79,6 +79,8 @@ git rebase --interactive
 - Damy im cwiczenie rownie proste (moze takie same) na kodzie
 
 
+
+
 Zwrocic uwage, ze ludzie czasem nie rozumieja jak mozna odwrocic kolejnosc commitow (cherry-pick / rebase, obawy ze mozna miec commit z edycja plikow ktory powstal w innym commicie. Zwrocic uwage, ze tutaj mamy proste sytuacje w ktorych pliki sa, a do trudniejszych sytuacji dojdziemy pozniej - w skrocie - powstana konflikty i git zapyta co zrobic bo nie wie jak to rozwiazac).
 
 ## pushowanie i pullowanie zmian - TOMEK
@@ -125,3 +127,4 @@ Czasowo: 9-17 z czego odpada:
 ?
 
 Przed prezentacją usunąć wszystkie aliasy z własne .gitconfig
+Skracarka linków i link do naszego pliku linki z prezentacji.html
