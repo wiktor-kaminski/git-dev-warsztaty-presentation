@@ -288,7 +288,13 @@
 					</ul>
 				</section>
 				<section>
-					Ćwiczenia
+					<h3>Ćwiczenie</h3>
+					<ol>
+						<li>Utwórz repozytorium - git init</li>
+						<li>Stwórz plik index.txt z zawartością "Hello World"</li>
+						<li>Dodaj plik do repozytorium (git add, git commit)</li>
+						<li>Zmień treść pliku na "Witaj świecie"</li>
+					</ol>
 				</section>
 			</section>
 
@@ -367,40 +373,90 @@
 			<section>
 				<section>
 					<h2>Branche</h2>
+					OBRAZEK
+				</section>
+				<section>
+					<h3>cherry-pick</h3>
+					<p>
+						Commity między branchami można przekładać
+					</p>
+					OBRAZEK
+				</section>
+				<section>
+					<h2>Merge</h2>
 					ToDo - Krzysiek
 				</section>
 				<section>
-					Ćwiczenia
+					<h2>Rebase</h2>
+					ToDo - Krzysiek
 				</section>
-			</section>
-
-			<section>
-				<section>
-					<h2>Pushowanie
-						<br>&
-						<br>pullowanie zmian</h2>
-					ToDo - Tomek
-				</section>
-				<section>
-					<h3>Pull z rebase</h3>
-				</section>
-			</section>
-
-			<section>
 				<section>
 					<h2>Merge vs rebase</h2>
 					ToDo - Krzysiek
 				</section>
 				<section>
-					Ćwiczenia
+					Dwa ćwiczenia, pierwszy ten z mergeLUBrebase, drugie z konfliktami, oba Krzysiek ma do sclonowania
+				</section>
+				<section>
+					<h3>Rebase to świetne narzędzie...</h3>
+					<p>
+						Rebase to świetne narzędzie, poprawianie czytelności historii bardzo ułatatwia przeglądanie repozytorium.
+					</p>
+					<p class="fragment">
+						Ale trzeba być ostrożnym. Czasami warto przerwać rebasowanie i jednak zrobić zwykłego merge.
+						<br/>
+						<a href="xxx">
+							<small>
+								<i>link do fajnego artykułu tłumaczącego trudności które można napotkać</i>
+							</small>
+						</a>
+					</p>
 				</section>
 			</section>
 
 			<section>
-				<h2>Forki & Pull requesty</h2>
-				<p>
-					<img src="img/forkAndPullModel.png">
-				</p>
+				<section>
+					<h2>Przeglądanie historii</h2>
+					<ul>
+						<li>git log</li>
+						<li>gitk</li>
+					</ul>
+				</section>
+				<section>
+					<h3>git log</h3>
+					OBRAZEK
+				</section>
+				<section>
+					<h3>gitk</h3>
+					OBRAZEK
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Pushowanie
+						<br>&
+						<br>pullowanie zmian</h2>
+					<p>
+						Synchronizacja repozytoriów (np. lokalnego z wersją na GitHubie) odbywa się za pomocą 'wypychania' i 'ciągnięcia' commitów
+						<ul>
+							<li>git push</li>
+							<li>
+								git pull
+								<ul>
+									<li>git fetch</li>
+									<li>git merge</li>
+								</ul>
+							</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h3>Pull z rebase</h3>
+					Często dobrą opcją jest zastosowanie komendy która od razu za nas zrebasuje commity
+					<p>
+						<code>git pull --rebase</code>
+					</p>
+				</section>
 			</section>
 
 			<section>
@@ -408,6 +464,28 @@
 				<p>
 					<img src="img/reflog.png">
 				</p>
+			</section>
+
+			<section>
+				<section>
+					<h2>Forki & Pull requesty</h2>
+					<p>
+						<img src="img/forkAndPullModel.png">
+					</p>
+				</section>
+				<section>
+					<h3>
+						Pytania? - Pull requesty!
+					</h3>
+				</section>
+			</section>
+
+			<section>
+				<h2>Przydatne narzędzia GitHuba związane z gitem</h2>
+				<ul>
+					<li class="fragment">gist</li>
+					<li class="fragment">GitHub Pages</li>
+				</ul>
 			</section>
 
 			<section>
