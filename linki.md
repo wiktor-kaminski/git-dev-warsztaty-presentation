@@ -7,3 +7,6 @@
   * [Git cheatsheet](http://files.zeroturnaround.com/pdf/zt_git_cheat_sheet.pdf)
   * [How to undo (almost) anything with git](https://blog.github.com/2015-06-08-how-to-undo-almost-anything-with-git/)
   * [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
+  * [GIT Illustrated Cheatsheet](https://illustrated-git.readthedocs.io/en/latest/#)
+  * [Artykuł na co uważać przy rebase](https://medium.com/@fredrikmorken/why-you-should-stop-using-git-rebase-5552bee4fed1)
+
