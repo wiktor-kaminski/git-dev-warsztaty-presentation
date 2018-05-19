@@ -1,7 +1,7 @@
 1. Jak sie macie?
 2. Git :)
 3. Wszystko jest jasne! Brak pytań :)
-4. Jakie piwo
+4. Jakie piwo - możemy gdzieś w pobliże się przejść na kawę/piwo i wyjaśnić trudniejsze kwestie gitowe albo cokolwiek.
 5. Dobra robota, fajne warsztaty
 6. Test 
 7.
