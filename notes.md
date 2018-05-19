@@ -131,4 +131,3 @@ Czasowo: 9-17 z czego odpada:
 Przed prezentacją usunąć wszystkie aliasy z własne .gitconfig
 Skracarka linków i link do naszego pliku linki z prezentacji.html
 Może 'git diff' wcześniej pokazać.
-moze <li>git log, gitk</li> wczesniej pokazać
