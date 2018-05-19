@@ -1,4 +1,4 @@
-1.
+1. Jak sie macie?
 2. Git :)
 3.
 4.
