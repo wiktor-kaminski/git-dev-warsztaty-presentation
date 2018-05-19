@@ -1,6 +1,6 @@
 1. Jak sie macie?
 2. Git :)
-3.
+3. Wszystko jest jasne! Brak pytań :)
 4.
 5.
 6. Test 
