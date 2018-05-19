@@ -11,6 +11,7 @@
 11.dobre szkolenie
 12. W jakiej sytuacji warto korzystac z git patch?
 13.
+13.Bickbacket czy github?
 14.
 15.
 16.
